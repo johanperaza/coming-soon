@@ -1,0 +1,95 @@
+/* 1. Reseteo básico para que no queden márgenes raros */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Cuerpo de la página y fondo */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Una tipografía limpia */
+    height: 100vh; /* Que ocupe el 100% del alto de la pantalla */
+
+    /* Configuración de la imagen de fondo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bgwebsoon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 3. El Súper Poder de Flexbox: Centrado absoluto */
+.contenedor-principal {
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos uno debajo del otro */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;
+    padding: 20px;
+}
+
+/* 4. Estilos del Título */
+.titulo {
+    color: #ffffff;
+    font-size: clamp(2.5rem, 8vw, 5rem); /* Se encoge en celular y crece en PC automáticamente */
+    letter-spacing: 8px; /* Espaciado entre letras para un look más pro */
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* 5. Estilos de las Redes Sociales */
+.redes-sociales {
+    display: flex;
+    gap: 30px; /* Subí un poquito el espacio entre ellas para que no se choquen al crecer */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.enlace-red {
+    color: rgba(255, 255, 255, 0.6); /* Las hacemos un poquito más transparentes de base */
+    text-decoration: none;
+    font-size: 1.2rem; /* Un pelín más grandes */
+    letter-spacing: 2px;
+    display: inline-block; /* Obligatorio para que la animación de movimiento funcione bien */
+
+    /* Esta línea es la magia: hace que TODO lo que cambie abajo tarde 0.3 segundos y sea fluido */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* EL EFECTO EXAGERADO: Al pasar el mouse por encima */
+.enlace-red:hover {
+    color: #ffffff; /* Blanco total */
+
+    /* El truco: scale(1.2) la agranda un 20% y translateY(-5px) la sube 5 píxeles */
+    transform: scale(1.2) translateY(-5px);
+
+    /* Extra: Una sombrita sutil blanca para que parezca que brilla */
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+
+/* --- AJUSTES PARA EL COPYRIGHT (PEGA ESTO AL FINAL) --- */
+
+/* 1. Cambiamos el comportamiento del contenedor para que empuje el footer abajo */
+.contenedor-principal {
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+/* 2. Le ponemos los "resortes" invisibles al título y redes */
+.titulo {
+    margin-top: auto;
+}
+
+.redes-sociales {
+    margin-bottom: auto;
+}
+
+/* 3. Los estilos del texto del copyright */
+.copyright {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
