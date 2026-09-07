@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum of Broken Hearts | Exhibition | Johan Peraza</title>
+
+    <meta name="description"
+        content="Official exhibition page for 'Museum of Broken Hearts' by Johan Peraza. Explore lyrics, official music video, and production details.">
+    <meta name="author" content="Johan Peraza">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://johanperaza.com/ep/museum-of-broken-hearts.html">
+
+    <!-- Stylesheets & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../variables.css">
+    <link rel="stylesheet" href="../master-style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/sunflower.png">
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicRecording",
+      "name": "Museum of Broken Hearts",
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Johan Peraza",
+        "url": "https://johanperaza.com"
+      },
+      "inAlbum": {
+        "@type": "MusicAlbum",
+        "name": "Heartbreak Files: Vol. 1",
+        "url": "https://johanperaza.com/ep/"
+      },
+      "genre": "Alternative Pop/Rock",
+      "datePublished": "2025-08-07",
+      "duration": "PT3M42S",
+      "recordingOf": {
+        "@type": "MusicComposition",
+        "name": "Museum of Broken Hearts",
+        "composer": {
+          "@type": "Person",
+          "name": "Johan Peraza"
+        },
+        "lyricist": {
+          "@type": "Person",
+          "name": "Johan Peraza"
+        }
+      },
+      "subjectOf": {
+        "@type": "VideoObject",
+        "name": "Johan Peraza - Museum of Broken Hearts (Official Video)",
+        "embedUrl": "https://www.youtube.com/embed/zFwGD-oG84o",
+        "url": "https://youtu.be/zFwGD-oG84o"
+      },
+      "url": "https://johanperaza.com/ep/museum-of-broken-hearts.html"
+    }
+    </script>
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="music.song">
+    <meta property="og:title" content="Museum of Broken Hearts — Johan Peraza | Exhibition">
+    <meta property="og:description"
+        content="Explore the official exhibition, story, and lyrics for 'Museum of Broken Hearts' by Johan Peraza.">
+    <meta property="og:url" content="https://johanperaza.com/ep/museum-of-broken-hearts.html">
+    <meta property="og:image" content="https://johanperaza.com/assets/images/cover_art_heartbreak_files.png">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Museum of Broken Hearts — Johan Peraza | Exhibition">
+    <meta name="twitter:description" content="Explore lyrics and story for 'Museum of Broken Hearts' by Johan Peraza.">
+    <meta name="twitter:image" content="https://johanperaza.com/assets/images/cover_art_heartbreak_files.png">
+
+    <style>
+        :root {
+            --bg-editorial: #000000;
+            --text-main: #FFFFFF;
+            --text-muted: #B0B0B0;
+            --border-subtle: rgba(255, 255, 255, 0.18);
+        }
+
+        body.track-exhibition-body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: var(--bg-editorial);
+            color: var(--text-main);
+            font-family: var(--font-body), 'Inter', sans-serif;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body.track-exhibition-body::before {
+            content: '';
+            position: fixed;
+            top: -5%;
+            left: -5%;
+            width: 110vw;
+            height: 110vh;
+            z-index: -1;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url('../ep/img/museum.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 1;
+            filter: blur(14px) brightness(0.6) contrast(1.05);
+            pointer-events: none;
+        }
+
+        .floating-cassette-anchor {
+            position: fixed;
+            left: -220px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 80;
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .floating-cassette-anchor:hover {
+            left: -80px;
+        }
+
+        .real-cassette-img {
+            width: 520px;
+            height: auto;
+            display: block;
+            filter: drop-shadow(15px 25px 35px rgba(0, 0, 0, 0.6));
+            animation: cdRotate 14s linear infinite;
+            transform-origin: center center;
+        }
+
+        .floating-cassette-anchor:hover .real-cassette-img {
+            animation-play-state: paused;
+        }
+
+        @keyframes cdRotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        nav.site-navigation {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0)) !important;
+            box-shadow: none !important;
+            backdrop-filter: blur(4px);
+        }
+
+        nav.site-navigation .nav-link,
+        nav.site-navigation .social-link {
+            color: var(--text-main) !important;
+        }
+
+        nav.site-navigation .nav-link:hover,
+        nav.site-navigation .social-link:hover {
+            color: var(--text-muted) !important;
+        }
+
+        .nav-home-fixed .home-btn {
+            color: var(--text-main) !important;
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            padding: 0 !important;
+        }
+
+        .menu-toggle-btn .hamburger-bar {
+            background-color: var(--text-main) !important;
+        }
+
+        .hero-view-wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            box-sizing: border-box;
+            padding-top: 140px;
+            padding-bottom: 80px;
+        }
+
+        .track-hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            max-width: 1300px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 50px 0 100px;
+            position: relative;
+            z-index: 2;
+            align-items: start;
+        }
+
+        .left-editorial-col {
+            padding-right: 20px;
+        }
+
+        .ep-breadcrumb-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-bottom: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .ep-breadcrumb-link:hover {
+            color: var(--text-main);
+            transform: translateX(-3px);
+        }
+
+        .catalog-meta-bar {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .release-date {
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: var(--text-muted);
+            display: inline-block;
+        }
+
+        .catalog-badge {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 2px 8px;
+            border-radius: 2px;
+            font-weight: 600;
+        }
+
+        .track-hero-title {
+            font-size: 3rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 1.1;
+            margin: 0 0 25px 0;
+            color: var(--text-main);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .story-credits-toggle {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 8px;
+        }
+
+        .toggle-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 0;
+            transition: color 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .toggle-btn.active {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .toggle-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -9px;
+            left: 0;
+            width: 100%;
+            height: 1.5px;
+            background: var(--text-main);
+        }
+
+        .tab-panel {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(3px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .story-text {
+            font-size: 0.88rem;
+            line-height: 1.8;
+            color: #E0E0E0;
+            font-weight: 300;
+            margin-bottom: 16px;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .story-quote {
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-size: 1.05rem;
+            line-height: 1.55;
+            margin: 22px 0;
+            color: #FFFFFF;
+            border-left: 2px solid var(--text-main);
+            padding-left: 16px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .credits-list p {
+            font-size: 0.88rem;
+            line-height: 1.75;
+            color: #E0E0E0;
+            margin-bottom: 12px;
+        }
+
+        .credits-list strong {
+            color: #FFFFFF;
+        }
+
+        .share-exhibition-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-main);
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 10px 18px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(4px);
+        }
+
+        .share-exhibition-btn:hover {
+            background: var(--text-main);
+            color: #000000;
+            border-color: var(--text-main);
+        }
+
+        .right-lyrics-col {
+            padding-left: 20px;
+        }
+
+        .lyrics-top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 8px;
+        }
+
+        .lyrics-title-clean {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .lang-switch-box {
+            display: flex;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            background: none;
+            border: none;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            padding: 0;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .lang-btn.active {
+            color: var(--text-main);
+            font-weight: 700;
+            border-bottom: 1px solid var(--text-main);
+        }
+
+        .clean-stanza {
+            margin-bottom: 22px;
+            position: relative;
+        }
+
+        .stanza-body {
+            margin: 0;
+            white-space: pre-line;
+            font-size: 0.84rem;
+            line-height: 1.7;
+            color: #CCCCCC;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            transition: color 0.3s ease;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .clean-stanza:hover .stanza-body {
+            color: #FFFFFF;
+        }
+
+        .copy-icon-trigger {
+            position: absolute;
+            top: 2px;
+            right: 0;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 0.65rem;
+            opacity: 0;
+            transition: opacity 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .clean-stanza:hover .copy-icon-trigger {
+            opacity: 1;
+        }
+
+        .copy-icon-trigger:hover {
+            color: var(--text-main);
+        }
+
+        .bottom-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 90px 30px 40px 30px;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .stream-title-clean {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-align: center;
+            margin-bottom: 35px;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        .stream-buttons-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .stream-platform-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 12px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(6px);
+            border-radius: 2px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .stream-platform-btn i {
+            font-size: 0.95rem;
+        }
+
+        .stream-platform-btn:hover {
+            background: #FFFFFF;
+            color: #000000;
+            border-color: #FFFFFF;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+        }
+
+        .stream-platform-btn:hover i {
+            color: #000000 !important;
+        }
+
+        .media-embed-wrapper {
+            max-width: 850px;
+            margin: 0 auto 80px auto;
+            background: #000000;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--border-subtle);
+        }
+
+        .responsive-media-ratio {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .responsive-media-ratio iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .next-track-nav {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .next-track-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .next-track-link:hover {
+            color: var(--text-main);
+            transform: translateX(4px);
+        }
+
+        #toast-msg {
+            visibility: hidden;
+            min-width: 220px;
+            background-color: #FFFFFF;
+            color: #000000;
+            font-weight: 600;
+            text-align: center;
+            padding: 10px 18px;
+            position: fixed;
+            z-index: 99999;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0;
+            transition: opacity 0.3s, bottom 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        #toast-msg.show {
+            visibility: visible;
+            opacity: 1;
+            bottom: 40px;
+        }
+
+        @media (max-width: 1400px) and (min-width: 769px) {
+            .floating-cassette-anchor {
+                top: auto;
+                bottom: -220px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .floating-cassette-anchor:hover {
+                left: 50%;
+                bottom: -160px;
+            }
+
+            .real-cassette-img {
+                width: 460px;
+            }
+        }
+
+        @media (max-width: 950px) {
+            .hero-view-wrapper {
+                min-height: auto;
+                padding-top: 110px;
+            }
+
+            .track-hero-grid {
+                grid-template-columns: 1fr;
+                padding: 10px 25px 40px 25px;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .floating-cassette-anchor {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="track-exhibition-body">
+
+    <div class="floating-cassette-anchor">
+        <a href="https://open.spotify.com/track/7f53djPpLV90tEdWXr1OFh?si=b7f9d4e816274ca7" target="_blank"
+            rel="noopener" title="Listen on Spotify">
+            <img src="../assets/images/cd_loop.png" alt="Museum of Broken Hearts Artwork" class="real-cassette-img">
+        </a>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="site-navigation" aria-label="Main Navigation">
+        <div class="nav-desktop-container">
+            <div class="nav-row-sections">
+                <a href="../listen/index.html" target="_blank" class="nav-link active">Listen</a>
+                <a href="../book/index.html" class="nav-link">Book</a>
+                <a href="../bio/index.html" class="nav-link">Bio</a>
+                <a href="../contact/index.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-row-socials">
+                <a href="https://www.instagram.com/johanperazaofficial/" target="_blank" rel="noopener"
+                    class="social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/JohanPeraza07" target="_blank" rel="noopener" class="social-link" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.tiktok.com/@johanperazaofficial" target="_blank" rel="noopener" class="social-link"
+                    aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com/johanperazaofficial" target="_blank" rel="noopener"
+                    class="social-link" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.youtube.com/@johanperazaofficial" target="_blank" rel="noopener"
+                    class="social-link" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://open.spotify.com/artist/5I8siYDyOpzkma70r566GP" target="_blank" rel="noopener"
+                    class="social-link" aria-label="Spotify">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
+                <a href="https://music.apple.com/co/artist/johan-peraza/1617756824" target="_blank" rel="noopener"
+                    class="social-link" aria-label="Apple Music">
+                    <i class="fa-brands fa-apple"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fixed Home Button -->
+    <div class="nav-home-fixed">
+        <a href="../index.html" class="home-btn" aria-label="Go to Home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+    </div>
+
+    <!-- Mobile Navigation Controls -->
+    <div class="nav-trigger-container">
+        <button class="menu-toggle-btn" aria-expanded="false" aria-label="Toggle Menu" id="menu-button">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+    </div>
+
+    <div class="nav-sidebar-panel" id="fullscreen-menu" aria-hidden="true">
+        <div class="sidebar-content-wrapper">
+            <ul class="sidebar-menu-links">
+                <li><a href="../listen/index.html" target="_blank" class="sidebar-link">Listen</a></li>
+                <li><a href="../book/index.html" class="sidebar-link">Book</a></li>
+                <li><a href="../bio/index.html" class="sidebar-link">Bio</a></li>
+                <li><a href="../contact/index.html" class="sidebar-link">Contact</a></li>
+            </ul>
+
+            <div class="sidebar-socials-row">
+                <a href="https://www.instagram.com/johanperazaofficial/" target="_blank" rel="noopener"
+                    class="sidebar-social-icon" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/JohanPeraza07" target="_blank" rel="noopener" class="sidebar-social-icon"
+                    aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.tiktok.com/@johanperazaofficial" target="_blank" rel="noopener"
+                    class="sidebar-social-icon" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com/johanperazaofficial" target="_blank" rel="noopener"
+                    class="sidebar-social-icon" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.youtube.com/@johanperazaofficial" target="_blank" rel="noopener"
+                    class="sidebar-social-icon" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://open.spotify.com/artist/5I8siYDyOpzkma70r566GP" target="_blank" rel="noopener"
+                    class="sidebar-social-icon" aria-label="Spotify">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
+                <a href="https://music.apple.com/co/artist/johan-peraza/1617756824" target="_blank" rel="noopener"
+                    class="sidebar-social-icon" aria-label="Apple Music">
+                    <i class="fa-brands fa-apple"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="hero-view-wrapper">
+        <main class="track-hero-grid">
+
+            <div class="left-editorial-col">
+                <a href="../ep/index.html" class="ep-breadcrumb-link">
+                    <i class="fa-solid fa-arrow-left"></i> Heartbreak Files: Vol. 1
+                </a>
+
+                <div class="catalog-meta-bar">
+                    <span class="catalog-badge">CAT. HF-05</span>
+                    <span class="catalog-badge">STEREO</span>
+                    <span class="release-date">Single • 7 August 2025</span>
+                </div>
+
+                <h1 class="track-hero-title">Museum of<br>Broken Hearts</h1>
+
+                <div class="story-credits-toggle">
+                    <button class="toggle-btn active" onclick="switchEditorialTab('story')">The Story</button>
+                    <button class="toggle-btn" onclick="switchEditorialTab('credits')">Credits</button>
+                </div>
+
+                <div id="panel-story" class="tab-panel active">
+                    <div class="story-quote">
+                        "Saying 'I promise I won't call' isn't just about avoiding a phone call. It's about accepting
+                        that you can't force an answer when there's nothing left to fix."
+                    </div>
+                    <p class="story-text">
+                        The concept behind this song started years ago as a university project with a close friend who
+                        actually came up with the name: <em>The Museum of Broken Hearts</em>. Life and time eventually
+                        took us down different paths, but the track stayed alive as a quiet tribute to that shared
+                        memory.
+                    </p>
+                    <p class="story-text">
+                        Out of all the original songs from my initial era, this was technically the last one I recorded
+                        before stepping back for a while. Getting it right was a process. The original demo was way
+                        darker, with a completely different harmonic direction and lyric structure. In the end, I
+                        stripped almost everything down and rebuilt it from scratch—keeping the core melody and chorus,
+                        but reshaping the arrangements to give the story a whole new perspective.
+                    </p>
+                    <p class="story-text">
+                        That evolution shows in how the track builds. Toward the end, you hear raw screams and vocal fry
+                        running right alongside the clean main vocal. It wasn't about making a purely sad or happy
+                        track; it was about capturing that real, unpolished desperation—that chaotic overlap of emotions
+                        when you're forced to accept something you can't change.
+                    </p>
+                    <p class="story-text">
+                        Lines like <em>"I promise I won't call"</em> became central over time. It's that universal
+                        impulse to look for closure, only to realize that sometimes the most honest move is learning to
+                        sit with the pain without reaching out.
+                    </p>
+                    <p class="story-text">
+                        For the music video in La Candelaria, introducing the ghost companion was a way to personify
+                        those feelings that linger in our daily lives. You see us playing
+                        cards or running in the park, absurd moments that show how grief and memories just tag along as
+                        you go about your day.
+                    </p>
+                    <p class="story-text">
+                        There's also a quiet irony to the hook: <em>"Welcome to the show... the museum of broken
+                            hearts."</em> It ends up being the very last line spoken on the track—and literally the last
+                        phrase I put on tape before pausing to reorganize my life. It wasn't meant to be an
+                        inspirational speech, but rather a raw statement of purpose: this is who I am, this is what I'm
+                        built for. Life is going to break my heart again, and I'm going to keep turning it into music
+                        regardless.
+                    </p>
+                    <p class="story-text">
+                        Looking back, <em>Museum of Broken Hearts</em> marked the end of a specific chapter. It was like
+                        packing up a small suitcase with what fit, closing a door, and honoring the lessons that built
+                        the foundation for everything coming next.
+                    </p>
+                </div>
+
+                <div id="panel-credits" class="tab-panel">
+                    <div class="credits-list">
+                        <p><strong>Written & Composed by:</strong> Johan Peraza</p>
+                        <p><strong>Lead & Backing Vocals:</strong> Johan Peraza</p>
+                        <p><strong>Production :</strong> Johan Peraza / Juan Fernando Moreno</p>
+                        <p><strong>Mixing & Mastering :</strong> Juan David Benítez</p>
+                        <p><strong>Video Location:</strong> La Candelaria (Bogotá)</p>
+                        <p><strong>Video Director:</strong> Katherine Riaño</p>
+                        <p><strong>Release Date:</strong> 7 August 2025</p>
+                    </div>
+                </div>
+
+                <button class="share-exhibition-btn" onclick="shareCurrentExhibition()">
+                    <i class="fa-solid fa-share-nodes"></i> Share Exhibition
+                </button>
+            </div>
+
+            <div class="right-lyrics-col">
+                <div class="lyrics-top-bar">
+                    <span class="lyrics-title-clean">Lyrics</span>
+                    <div class="lang-switch-box">
+                        <button class="lang-btn active" id="btn-en" onclick="switchLyricsLang('en')">EN</button>
+                        <span style="font-size: 0.65rem; color: var(--text-muted);">|</span>
+                        <button class="lang-btn" id="btn-es" onclick="switchLyricsLang('es')">ES</button>
+                    </div>
+                </div>
+
+                <div class="clean-stanza">
+                    <p class="stanza-body" id="stanza-1">I don't, I don't know what I'm doing
+                        I just try to look like I belong
+                        Still got a thousand questions
+                        But I promise I won't call</p>
+                    <button class="copy-icon-trigger" onclick="copyCleanQuote(this)" title="Copy Verse"><i
+                            class="fa-regular fa-copy"></i></button>
+                </div>
+
+                <div class="clean-stanza">
+                    <p class="stanza-body" id="stanza-2">But somehow, if I'm being honest
+                        I keep second-guessing, lost in thought again
+                        I don't know how long I can pretend
+                        And the last thing I remember was you saying</p>
+                    <button class="copy-icon-trigger" onclick="copyCleanQuote(this)" title="Copy Verse"><i
+                            class="fa-regular fa-copy"></i></button>
+                </div>
+
+                <div class="clean-stanza">
+                    <p class="stanza-body" id="stanza-3" style="font-weight: 500;">Don't you worry, darling
+                        Nothing's gonna hurt you
+                        Open your eyes, it's gonna be alright
+                        Welcome to the show, welcome to the show
+                        The museum of broken hearts
+                        Welcome to the show, welcome to the show
+                        The museum of broken hearts</p>
+                    <button class="copy-icon-trigger" onclick="copyCleanQuote(this)" title="Copy Chorus"><i
+                            class="fa-regular fa-copy"></i></button>
+                </div>
+
+                <div class="clean-stanza">
+                    <p class="stanza-body" id="stanza-4">I try my best not to think about you
+                        Still holding on to some pride
+                        I'm stuck with lines you used to say
+                        But I promise I won't call</p>
+                    <button class="copy-icon-trigger" onclick="copyCleanQuote(this)" title="Copy Verse"><i
+                            class="fa-regular fa-copy"></i></button>
+                </div>
+
+                <div class="clean-stanza">
+                    <p class="stanza-body" id="stanza-5">Don't you worry, darling
+                        (Don't you worry)
+                        Nothing's gonna hurt you
+                        Open your eyes, it's gonna be alright
+                        Welcome to the show, welcome to the show
+                        The museum of broken hearts</p>
+                    <button class="copy-icon-trigger" onclick="copyCleanQuote(this)" title="Copy Outro"><i
+                            class="fa-regular fa-copy"></i></button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Media Distribution Section -->
+    <section class="bottom-section">
+        <h2 class="stream-title-clean">Stream & Watch</h2>
+
+        <div class="stream-buttons-container">
+            <a href="https://open.spotify.com/track/7f53djPpLV90tEdWXr1OFh?si=b7f9d4e816274ca7" target="_blank"
+                rel="noopener" class="stream-platform-btn">
+                <i class="fa-brands fa-spotify" style="color: #1DB954;"></i> Spotify
+            </a>
+            <a href="https://music.apple.com/co/song/museum-of-broken-hearts/6805245238" target="_blank" rel="noopener"
+                class="stream-platform-btn">
+                <i class="fa-brands fa-apple"></i> Apple Music
+            </a>
+            <a href="https://youtu.be/zFwGD-oG84o" target="_blank" rel="noopener" class="stream-platform-btn">
+                <i class="fa-brands fa-youtube" style="color: #FF0000;"></i> YouTube Video
+            </a>
+            <a href="https://link.deezer.com/s/34kw6xv3ZNIe51qvk4ofl" target="_blank" rel="noopener"
+                class="stream-platform-btn">
+                <i class="fa-brands fa-deezer"></i> Deezer
+            </a>
+        </div>
+
+        <div class="media-embed-wrapper">
+            <div class="responsive-media-ratio">
+                <iframe src="https://www.youtube.com/embed/zFwGD-oG84o?si=yH6pCIh6gvI56uA7"
+                    title="Johan Peraza - Museum of Broken Hearts Official Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="next-track-nav">
+            <a href="little-girl.html" class="next-track-link">
+                Next Exhibition: Little Girl <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- UI Feedback Toast -->
+    <div id="toast-msg">Link Copied!</div>
+
+    <script src="../navigation.js"></script>
+    <script>
+        const lyricsData = {
+            en: {
+                s1: `I don't, I don't know what I'm doing\nI just try to look like I belong\nStill got a thousand questions\nBut I promise I won't call`,
+                s2: `But somehow, if I'm being honest\nI keep second-guessing, lost in thought again\nI don't know how long I can pretend\nAnd the last thing I remember was you saying`,
+                s3: `Don't you worry, darling\nNothing's gonna hurt you\nOpen your eyes, it's gonna be alright\nWelcome to the show, welcome to the show\nThe museum of broken hearts\nWelcome to the show, welcome to the show\nThe museum of broken hearts`,
+                s4: `I try my best not to think about you\nStill holding on to some pride\nI'm stuck with lines you used to say\nBut I promise I won't call`,
+                s5: `Don't you worry, darling\n(Don't you worry)\nNothing's gonna hurt you\nOpen your eyes, it's gonna be alright\nWelcome to the show, welcome to the show\nThe museum of broken hearts`
+            },
+            es: {
+                s1: `No sé, no sé qué estoy haciendo\nSolo trato de parecer que encajo aquí\nAún tengo mil preguntas sin respuesta\nPero prometo que no voy a llamar`,
+                s2: `Pero de alguna forma, si soy honesto\nSigo dudando de mí, perdido en mis pensamientos\nNo sé cuánto tiempo más puedo pretender\nY lo último que recuerdo fue escucharte decir:`,
+                s3: `No te preocupes, cariño\nNada te va a hacer daño\nAbre los ojos, todo va a estar bien\nBienvenido al show, bienvenido al show\nEl museo de los corazones rotos\nBienvenido al show, bienvenido al show\nEl museo de los corazones rotos`,
+                s4: `Intento con todas mis fuerzas no pensar en ti\nAún aferrándome a algo de orgullo\nMe quedé atrapado con las frases que solías decir\nPero prometo que no voy a llamar`,
+                s5: `Don't you worry, darling\n(No te preocupes)\nNada te va a hacer daño\nAbre los ojos, todo va a estar bien\nBienvenido al show, bienvenido al show\nEl museo de los corazones rotos`
+            }
+        };
+
+        function switchLyricsLang(lang) {
+            document.getElementById('btn-en').classList.remove('active');
+            document.getElementById('btn-es').classList.remove('active');
+
+            document.getElementById('btn-' + lang).classList.add('active');
+
+            document.getElementById('stanza-1').innerText = lyricsData[lang].s1;
+            document.getElementById('stanza-2').innerText = lyricsData[lang].s2;
+            document.getElementById('stanza-3').innerText = lyricsData[lang].s3;
+            document.getElementById('stanza-4').innerText = lyricsData[lang].s4;
+            document.getElementById('stanza-5').innerText = lyricsData[lang].s5;
+        }
+
+        function switchEditorialTab(tabName) {
+            const panels = document.querySelectorAll('.tab-panel');
+            const btns = document.querySelectorAll('.toggle-btn');
+
+            panels.forEach(p => p.classList.remove('active'));
+            btns.forEach(b => b.classList.remove('active'));
+
+            document.getElementById('panel-' + tabName).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        function copyCleanQuote(btn) {
+            const stanza = btn.parentElement;
+            const text = stanza.querySelector('.stanza-body').innerText;
+            const formatted = `"${text.trim()}"\n\n— Johan Peraza (Museum of Broken Hearts)\nhttps://johanperaza.com/ep/museum-of-broken-hearts.html`;
+
+            navigator.clipboard.writeText(formatted).then(() => {
+                showToast("Quote Copied!");
+            });
+        }
+
+        function shareCurrentExhibition() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Museum of Broken Hearts - Johan Peraza',
+                    text: 'Explore the official exhibition for Museum of Broken Hearts by Johan Peraza.',
+                    url: window.location.href,
+                }).catch(() => { });
+            } else {
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    showToast("Exhibition Link Copied!");
+                });
+            }
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById("toast-msg");
+            toast.innerText = msg || "Copied!";
+            toast.className = "show";
+            setTimeout(() => { toast.className = toast.className.replace("show", ""); }, 3000);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartbreak Files: Vol. 1 | Johan Peraza</title>
+
+    <meta name="description"
+        content="Official EP exhibition page for 'Heartbreak Files: Vol. 1' by Johan Peraza. Explore lyrics and tracklist.">
+    <meta name="author" content="Johan Peraza">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://johanperaza.com/ep/">
+
+    <!-- Stylesheets & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../variables.css">
+    <link rel="stylesheet" href="../master-style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/sunflower.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicAlbum",
+      "name": "Heartbreak Files: Vol. 1",
+      "url": "https://johanperaza.com/ep/",
+      "image": "https://johanperaza.com/assets/images/cover_art_heartbreak_files.png",
+      "genre": ["Alternative Pop", "Alternative Rock"],
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Johan Peraza",
+        "url": "https://johanperaza.com"
+      },
+      "numTracks": 6,
+      "track": [
+        {"@type": "MusicRecording", "name": "Prisoners", "position": 1, "url": "https://johanperaza.com/ep/prisoners.html"},
+        {"@type": "MusicRecording", "name": "Consequences", "position": 2, "url": "https://johanperaza.com/ep/consequences.html"},
+        {"@type": "MusicRecording", "name": "Different Way", "position": 3, "url": "https://johanperaza.com/ep/different-way.html"},
+        {"@type": "MusicRecording", "name": "I'll Always Be There", "position": 4, "url": "https://johanperaza.com/ep/ill-always-be-there.html"},
+        {"@type": "MusicRecording", "name": "Museum of Broken Hearts", "position": 5, "url": "https://johanperaza.com/ep/museum-of-broken-hearts.html"},
+        {"@type": "MusicRecording", "name": "Little Girl", "position": 6, "url": "https://johanperaza.com/ep/little-girl.html"}
+      ]
+    }
+    </script>
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Heartbreak Files: Vol. 1 | Johan Peraza">
+    <meta property="og:description"
+        content="Official EP exhibition page for 'Heartbreak Files: Vol. 1' by Johan Peraza.">
+    <meta property="og:image" content="https://johanperaza.com/assets/images/cover_art_heartbreak_files.png">
+    <meta property="og:image:alt" content="Heartbreak Files: Vol. 1 Cover Artwork">
+    <meta property="og:url" content="https://johanperaza.com/ep/">
+    <meta property="og:type" content="music.album">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Heartbreak Files: Vol. 1 | Johan Peraza">
+    <meta name="twitter:description"
+        content="Explore lyrics and tracklist for 'Heartbreak Files: Vol. 1' by Johan Peraza.">
+    <meta name="twitter:image" content="https://johanperaza.com/assets/images/cover_art_heartbreak_files.png">
+
+    <style>
+        :root {
+            --bg-editorial: #F4F1EA;
+            --text-main: #111111;
+            --text-muted: #666666;
+            --border-subtle: rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body.ep-landing-body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-editorial);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Video Loop Background */
+        .video-loop-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .video-loop-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(30%) contrast(105%);
+            opacity: 0.35;
+        }
+
+        .video-overlay-tint {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-editorial);
+            mix-blend-mode: color-burn;
+            opacity: 0.7;
+        }
+
+        .film-grain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 90;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Editorial Navigation Overrides */
+        nav.site-navigation {
+            background: linear-gradient(to bottom, rgba(244, 241, 234, 0.95), rgba(244, 241, 234, 0)) !important;
+            box-shadow: none !important;
+            backdrop-filter: blur(2px);
+        }
+
+        nav.site-navigation .nav-link,
+        nav.site-navigation .social-link {
+            color: var(--text-main) !important;
+        }
+
+        nav.site-navigation .nav-link:hover,
+        nav.site-navigation .social-link:hover {
+            color: var(--text-muted) !important;
+        }
+
+        .nav-home-fixed .home-btn {
+            color: var(--text-main) !important;
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            padding: 0 !important;
+        }
+
+        .menu-toggle-btn .hamburger-bar {
+            background-color: var(--text-main) !important;
+        }
+
+        /* Hero Layout */
+        .ep-hero-fullscreen {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 110px 25px 50px 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .ep-main-title-display {
+            font-family: var(--font-display, 'Georgia', serif);
+            font-size: clamp(2rem, 5.5vw, 4.5rem);
+            font-weight: 700;
+            line-height: 1.05;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin: 0 0 25px 0;
+            color: #111111;
+            text-align: center;
+            max-width: 1100px;
+            width: 100%;
+            word-wrap: break-word;
+        }
+
+        .ep-cover-wrapper {
+            max-height: 40vh;
+            width: auto;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+            transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            background: #000;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .ep-cover-wrapper:hover {
+            transform: scale(1.02);
+        }
+
+        .ep-cover-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator-box {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        .scroll-arrow-icon {
+            font-size: 0.9rem;
+            color: var(--text-main);
+            animation: arrowBlink 1.8s infinite ease-in-out;
+        }
+
+        .scroll-indicator-text {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
+        }
+
+        @keyframes arrowBlink {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                opacity: 0.4;
+            }
+
+            50% {
+                transform: translateY(6px);
+                opacity: 1;
+            }
+        }
+
+        /* Content Layer & Tracklist */
+        .content-layer {
+            position: relative;
+            z-index: 2;
+            background: rgba(244, 241, 234, 0.94);
+            backdrop-filter: blur(4px);
+        }
+
+        .tracklist-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 90px 30px 50px 30px;
+        }
+
+        .section-header-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--text-muted);
+            margin-bottom: 35px;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 10px;
+        }
+
+        .tracklist-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .track-row {
+            display: grid;
+            grid-template-columns: 50px 1fr 140px;
+            align-items: center;
+            padding: 22px 10px;
+            border-bottom: 1px solid var(--border-subtle);
+            text-decoration: none;
+            color: var(--text-main);
+            transition: background 0.3s ease, padding 0.3s ease;
+        }
+
+        .track-row:hover {
+            background: rgba(0, 0, 0, 0.03);
+            padding-left: 18px;
+        }
+
+        .track-number {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-family: monospace;
+        }
+
+        .track-title {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+
+        .track-action {
+            text-align: right;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            transition: color 0.3s ease;
+        }
+
+        .track-row:hover .track-action {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        /* Stream Section */
+        .stream-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 30px 90px 30px;
+            text-align: center;
+        }
+
+        .stream-buttons-grid {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .stream-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 12px 24px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            background: #ffffff;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .stream-btn:hover {
+            background: var(--text-main);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* Editorial Footer */
+        .editorial-footer {
+            border-top: 1px solid var(--border-subtle);
+            padding: 50px 40px 35px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-socials a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-right: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-socials a:hover {
+            color: var(--text-main);
+        }
+
+        .footer-legal {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+        }
+
+        /* Photo Credit Tag */
+        .cover-credit-tag {
+            position: absolute;
+            right: 35px;
+            bottom: 25px;
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            font-weight: 400;
+            opacity: 0.8;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .cover-credit-tag:hover {
+            opacity: 1;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .ep-hero-fullscreen {
+                padding-top: 90px;
+                padding-bottom: 70px;
+            }
+
+            .ep-main-title-display {
+                font-size: 2.2rem;
+                letter-spacing: 0px;
+                margin-bottom: 20px;
+            }
+
+            .ep-cover-wrapper {
+                max-height: 34vh;
+            }
+
+            .scroll-indicator-box {
+                bottom: 45px;
+            }
+
+            .cover-credit-tag {
+                right: 0;
+                left: 0;
+                bottom: 18px;
+                text-align: center;
+                font-size: 0.55rem;
+                letter-spacing: 1px;
+            }
+
+            .track-row {
+                grid-template-columns: 35px 1fr 90px;
+                padding: 18px 5px;
+            }
+
+            .track-title {
+                font-size: 0.92rem;
+                letter-spacing: 1px;
+            }
+
+            .editorial-footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-socials a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+
+<body class="ep-landing-body">
+
+    <div class="film-grain"></div>
+
+    <!-- Parallax Video Background -->
+    <div class="video-loop-background">
+        <video autoplay loop muted playsinline poster="../assets/images/cover_art_heartbreak_files.png">
+            <source src="../assets/video/ep-background-loop.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay-tint"></div>
+    </div>
+
+    <!-- Primary Navigation -->
+    <nav class="site-navigation" aria-label="Main Navigation">
+        <div class="nav-desktop-container">
+            <div class="nav-row-sections">
+                <a href="../listen/index.html" target="_blank" class="nav-link active">Listen</a>
+                <a href="../book/index.html" class="nav-link">Book</a>
+                <a href="../bio/index.html" class="nav-link">Bio</a>
+                <a href="../contact/index.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-row-socials">
+                <a href="https://www.instagram.com/johanperazaofficial/" target="_blank" rel="noopener"
+                    class="social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/JohanPeraza07" target="_blank" rel="noopener" class="social-link" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.tiktok.com/@johanperazaofficial" target="_blank" rel="noopener" class="social-link"
+                    aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com/johanperazaofficial" target="_blank" rel="noopener"
+                    class="social-link" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.youtube.com/@johanperazaofficial" target="_blank" rel="noopener"
+                    class="social-link" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://open.spotify.com/artist/5I8siYDyOpzkma70r566GP" target="_blank" rel="noopener"
+                    class="social-link" aria-label="Spotify">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
+                <a href="https://music.apple.com/co/artist/johan-peraza/1617756824" target="_blank" rel="noopener"
+                    class="social-link" aria-label="Apple Music">
+                    <i class="fa-brands fa-apple"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fixed Home Button -->
+    <div class="nav-home-fixed">
+        <a href="../index.html" class="home-btn" aria-label="Go to Home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+    </div>
+
+    <!-- Mobile Navigation Trigger -->
+    <div class="nav-trigger-container">
+        <button class="menu-toggle-btn" aria-expanded="false" aria-label="Toggle Menu" id="menu-button">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Navigation Panel -->
+    <div class="nav-sidebar-panel" id="fullscreen-menu" aria-hidden="true">
+        <div class="sidebar-content-wrapper">
+
+            <ul class="sidebar-menu-links">
+                <li><a href="../listen/index.html" target="_blank" class="sidebar-link">Listen</a></li>
+                <li><a href="../book/index.html" class="sidebar-link">Book</a></li>
+                <li><a href="../bio/index.html" class="sidebar-link">Bio</a></li>
+                <li><a href="../contact/index.html" class="sidebar-link">Contact</a></li>
+            </ul>
+
+            <div class="sidebar-socials-row">
+                <a href="https://www.instagram.com/johanperazaofficial/" target="_blank" rel="noopener"
+                    class="sidebar-social-icon" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/JohanPeraza07" target="_blank" rel="noopener" class="sidebar-social-icon"
+                    aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.tiktok.com/@johanperazaofficial" target="_blank" rel="noopener"
+                    class="sidebar-social-icon" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com/johanperazaofficial" target="_blank" rel="noopener"
+                    class="sidebar-social-icon" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.youtube.com/@johanperazaofficial" target="_blank" rel="noopener"
+                    class="sidebar-social-icon" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://open.spotify.com/artist/5I8siYDyOpzkma70r566GP" target="_blank" rel="noopener"
+                    class="sidebar-social-icon" aria-label="Spotify">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
+                <a href="https://music.apple.com/co/artist/johan-peraza/1617756824" target="_blank" rel="noopener"
+                    class="sidebar-social-icon" aria-label="Apple Music">
+                    <i class="fa-brands fa-apple"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="ep-hero-fullscreen">
+        <h1 class="ep-main-title-display">
+            Heartbreak Files: Vol. 1
+        </h1>
+
+        <div class="ep-cover-wrapper">
+            <img src="../assets/images/cover_art_heartbreak_files.png" alt="Heartbreak Files: Vol. 1 Cover"
+                class="ep-cover-img">
+        </div>
+
+        <div class="scroll-indicator-box">
+            <i class="fa-solid fa-chevron-down scroll-arrow-icon"></i>
+            <span class="scroll-indicator-text">Scroll to Explore Tracklist</span>
+        </div>
+
+        <a href="https://www.instagram.com/annduartecreativa" target="_blank" rel="noopener" class="cover-credit-tag">
+            Cover Photo by Ann Duarte @annduartecreativa
+        </a>
+    </section>
+
+    <!-- Content Layer -->
+    <div class="content-layer">
+
+        <!-- Tracklist Section -->
+        <section class="tracklist-section">
+            <h2 class="section-header-title">Tracklist / Lyrics</h2>
+
+            <div class="tracklist-container">
+
+                <a href="prisoners.html" class="track-row">
+                    <span class="track-number">01</span>
+                    <span class="track-title">Prisoners</span>
+                    <span class="track-action">Lyrics →</span>
+                </a>
+
+                <a href="consequences.html" class="track-row">
+                    <span class="track-number">02</span>
+                    <span class="track-title">Consequences</span>
+                    <span class="track-action">Lyrics →</span>
+                </a>
+
+                <a href="different-way.html" class="track-row">
+                    <span class="track-number">03</span>
+                    <span class="track-title">Different Way</span>
+                    <span class="track-action">Lyrics →</span>
+                </a>
+
+                <a href="ill-always-be-there.html" class="track-row">
+                    <span class="track-number">04</span>
+                    <span class="track-title">I'll Always Be There</span>
+                    <span class="track-action">Lyrics →</span>
+                </a>
+
+                <a href="museum-of-broken-hearts.html" class="track-row">
+                    <span class="track-number">05</span>
+                    <span class="track-title">Museum of Broken Hearts</span>
+                    <span class="track-action">Lyrics →</span>
+                </a>
+
+                <a href="little-girl.html" class="track-row">
+                    <span class="track-number">06</span>
+                    <span class="track-title">Little Girl</span>
+                    <span class="track-action">Lyrics →</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Platforms Section -->
+        <section class="stream-section">
+            <h2 class="section-header-title">Listen on Platforms</h2>
+
+            <div class="stream-buttons-grid">
+                <a href="https://open.spotify.com/album/5uu2sRT1FI6rHsexuimDdQ?si=-RZdT3kySUO4DtXojL-A7A"
+                    target="_blank" rel="noopener" class="stream-btn">
+                    <i class="fa-brands fa-spotify" style="color: #1DB954;"></i> Spotify
+                </a>
+                <a href="https://music.apple.com/co/album/heartbreak-files-vol-1-ep/6805245233" target="_blank"
+                    rel="noopener" class="stream-btn">
+                    <i class="fa-brands fa-apple"></i> Apple Music
+                </a>
+                <a href="https://youtube.com/playlist?list=PLFgCw08nDKfc&si=epKR-43BcInTfz6H" target="_blank"
+                    rel="noopener" class="stream-btn">
+                    <i class="fa-brands fa-youtube" style="color: #FF0000;"></i> YouTube
+                </a>
+                <a href="https://link.deezer.com/s/34kw6xv3ZNIe51qvk4ofl" target="_blank" rel="noopener"
+                    class="stream-btn">
+                    <i class="fa-brands fa-deezer"></i> Deezer
+                </a>
+            </div>
+        </section>
+
+        <!-- Editorial Footer -->
+        <footer class="editorial-footer">
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/johanperazaofficial/" target="_blank" rel="noopener"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/JohanPeraza07" target="_blank" rel="noopener" aria-label="X"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://open.spotify.com/artist/5I8siYDyOpzkma70r566GP" target="_blank" rel="noopener"
+                    aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.youtube.com/@johanperazaofficial" target="_blank" rel="noopener"
+                    aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@johanperazaofficial" target="_blank" rel="noopener"
+                    aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+
+            <div class="footer-legal">
+                © 2026 Johan Peraza. All rights reserved.
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Global Navigation Script -->
+    <script src="../navigation.js"></script>
+
+</body>
+
+</html>
