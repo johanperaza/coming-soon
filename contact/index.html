@@ -24,25 +24,25 @@
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "name": "Johan Peraza Contact Page",
-      "description": "Official contact and booking channel for alternative pop-rock artist Johan Peraza.",
-      "url": "https://johanperaza.com/contact/",
-      "mainEntity": {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Johan Peraza Contact Page",
+    "description": "Official contact and booking channel for alternative pop-rock artist Johan Peraza.",
+    "url": "https://johanperaza.com/contact/",
+    "mainEntity": {
         "@type": "MusicGroup",
         "name": "Johan Peraza",
         "url": "https://johanperaza.com",
         "sameAs": [
-          "https://www.instagram.com/johanperazaofficial/",
-          "https://www.youtube.com/@johanperazaofficial",
-          "https://www.tiktok.com/@johanperazaofficial",
-          "https://www.facebook.com/johanperazaofficial",
-          "https://open.spotify.com/artist/5I8siYDyOpzkma70r566GP",
-          "https://music.apple.com/co/artist/johan-peraza/1617756824",
-          "https://x.com/JohanPeraza07"
+        "https://www.instagram.com/johanperazaofficial/",
+        "https://www.youtube.com/@johanperazaofficial",
+        "https://www.tiktok.com/@johanperazaofficial",
+        "https://www.facebook.com/johanperazaofficial",
+        "https://open.spotify.com/artist/5I8siYDyOpzkma70r566GP",
+        "https://music.apple.com/co/artist/johan-peraza/1617756824",
+        "https://x.com/JohanPeraza07"
         ]
-      }
+    }
     }
     </script>
 
@@ -70,10 +70,10 @@
     <nav class="site-navigation" aria-label="Main Navigation">
         <div class="nav-desktop-container">
             <div class="nav-row-sections">
-                <a href="../listen/index.html" target="_blank" class="nav-link">Listen</a>
-                <a href="../book/index.html" class="nav-link">Book</a>
-                <a href="../bio/index.html" class="nav-link">Bio</a>
-                <a href="../contact/index.html" class="nav-link active">Contact</a>
+                <a href="../listen/" target="_blank" class="nav-link">Listen</a>
+                <a href="../book/" class="nav-link">Book</a>
+                <a href="../bio/" class="nav-link">Bio</a>
+                <a href="../contact/" class="nav-link active">Contact</a>
             </div>
 
             <div class="nav-row-socials">
@@ -129,10 +129,10 @@
         <div class="sidebar-content-wrapper">
 
             <ul class="sidebar-menu-links">
-                <li><a href="../listen/index.html" target="_blank" class="sidebar-link">Listen</a></li>
-                <li><a href="../book/index.html" class="sidebar-link">Book</a></li>
-                <li><a href="../bio/index.html" class="sidebar-link">Bio</a></li>
-                <li><a href="../contact/index.html" class="sidebar-link">Contact</a></li>
+                <li><a href="../listen/" target="_blank" class="sidebar-link">Listen</a></li>
+                <li><a href="../book/" class="sidebar-link">Book</a></li>
+                <li><a href="../bio/" class="sidebar-link">Bio</a></li>
+                <li><a href="../contact/" class="sidebar-link">Contact</a></li>
             </ul>
 
             <div class="sidebar-socials-row">
@@ -182,7 +182,8 @@
                 <!-- Web3Forms Contact Form -->
                 <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contactForm">
                     <input type="hidden" name="access_key" value="4cdc80f2-dea3-4ba1-80d9-a6f8db52df23">
-                    <input type="hidden" name="redirect" value="https://johanperaza.com/contact/thanks.html">
+                    <input type="hidden" name="redirect" value="https://johanperaza.com/contact/thanks.html" meta
+                        name="robots" content="noindex, nofollow">
                     <input type="hidden" name="from_name" value="Johan Peraza Website Contact Form">
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
